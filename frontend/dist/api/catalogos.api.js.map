@@ -1,0 +1,1 @@
+{"version":3,"file":"catalogos.api.js","sourceRoot":"","sources":["../../src/api/catalogos.api.ts"],"names":[],"mappings":"AACA,OAAO,EAAE,OAAO,EAAE,OAAO,EAAE,MAAM,WAAW,CAAC;AAE7C,sFAAsF;AAEtF,MAAM,UAAU,iBAAiB;IAC/B,OAAO,OAAO,CAAC,GAAG,OAAO,eAAe,CAAC,CAAC;AAC5C,CAAC;AAED,MAAM,UAAU,aAAa;IAC3B,OAAO,OAAO,CAAC,GAAG,OAAO,UAAU,CAAC,CAAC;AACvC,CAAC"}

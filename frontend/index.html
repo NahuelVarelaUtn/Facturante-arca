@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Facturación de ventas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/app.css">
+</head>
+<body>
+  <div class="pagina">
+    <header class="cabecera">
+      <div>
+        <h1>Facturación de ventas</h1>
+        <p>Cargá borradores, facturalos en ARCA y consultá los comprobantes emitidos.</p>
+      </div>
+      <!-- Acción principal de la pantalla: abre el formulario de factura en un modal (components/InvoiceForm.ts) -->
+      <button id="btn-nueva-factura" class="btn btn--primario btn--grande" type="button">+ Nueva factura</button>
+    </header>
+
+    <main>
+      <!-- Métricas del mes -->
+      <section aria-labelledby="titulo-dashboard">
+        <h2 id="titulo-dashboard">Métricas del mes (ARCA)</h2>
+        <div class="metricas">
+          <div class="metrica">
+            <p class="metrica__titulo">Total facturado con CAE</p>
+            <p id="dash-total" class="metrica__valor metrica__valor--ok">—</p>
+          </div>
+          <div class="metrica">
+            <p class="metrica__titulo">Comprobantes del mes</p>
+            <p id="dash-cantidad" class="metrica__valor">—</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Listado: filtros + grilla paginada (components/InvoiceList.ts) -->
+      <section aria-labelledby="titulo-lista">
+        <div class="encabezado-lista">
+          <h2 id="titulo-lista">Comprobantes</h2>
+          <p id="lista-estado" aria-live="polite"></p>
+        </div>
+
+        <form id="form-filtros">
+          <div class="campos">
+            <label>Nº de factura
+              <input id="f-nroFactura" type="search" placeholder="Ej. 0001-0000">
+            </label>
+            <label>Cliente
+              <span class="campo-modal">
+                <input id="f-cliente" type="text" readonly placeholder="Todos los clientes">
+                <button id="btn-f-cliente" class="btn btn--secondary" type="button">Buscar…</button>
+                <button id="btn-f-cliente-quitar" class="btn btn--secondary" type="button"
+                        aria-label="Quitar el filtro de cliente" hidden>✕</button>
+              </span>
+            </label>
+            <label>Estado
+              <select id="f-estado">
+                <option value="">Todos</option>
+                <option value="BORRADOR">Borrador</option>
+                <option value="EMITIDA">Emitida</option>
+                <option value="ANULADA">Anulada</option>
+              </select>
+            </label>
+            <label>Fecha desde
+              <input id="f-fechaDesde" type="date">
+            </label>
+            <label>Fecha hasta
+              <input id="f-fechaHasta" type="date">
+            </label>
+          </div>
+          <div class="barra">
+            <button class="btn btn--primario" type="submit">Buscar</button>
+            <button class="btn btn--secondary" type="reset">Limpiar filtros</button>
+          </div>
+        </form>
+
+        <div class="tabla-scroll tabla-scroll--separada">
+          <table aria-labelledby="titulo-lista">
+            <thead>
+              <tr>
+                <th>Letra</th>
+                <th>Nº factura</th>
+                <th>Fecha</th>
+                <th>Cliente</th>
+                <th>Estado</th>
+                <th class="num">Total</th>
+                <th><span class="solo-lector">Acciones</span></th>
+              </tr>
+            </thead>
+            <tbody id="tbody-facturas"></tbody>
+          </table>
+        </div>
+
+        <nav class="paginacion" aria-label="Paginación del listado">
+          <div class="controles">
+            <button id="btn-prev" class="btn btn--secondary" type="button">← Anterior</button>
+            <span id="pagina-info" aria-live="polite"></span>
+            <button id="btn-next" class="btn btn--secondary" type="button">Siguiente →</button>
+          </div>
+          <label>Filas por página
+            <select id="p-tamanio">
+              <option value="5">5</option>
+              <option value="10" selected>10</option>
+              <option value="20">20</option>
+              <option value="50">50</option>
+            </select>
+          </label>
+        </nav>
+      </section>
+    </main>
+  </div>
+
+  <!-- TypeScript compilado (npm run build) -->
+  <script type="module" src="dist/app.js"></script>
+</body>
+</html>

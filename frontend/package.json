@@ -1,0 +1,14 @@
+{
+  "name": "facturacion-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Frontend CRUD de facturas de venta (TypeScript + HTML5)",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "start": "npx serve . -l 5500"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  }
+}

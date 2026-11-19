@@ -1,0 +1,388 @@
+/* Estilos de la aplicación (antes estaban dentro de index.html). */
+
+:root {
+  --tinta: #2D3748;
+  --apagado: #718096;
+  --linea: #E2E8F0;
+  --fondo: #F0F4F8;
+  --superficie: #ffffff;
+  --acento: #3182CE;
+  --acento-hover: #2B6CB0;
+  --peligro: #C53030;
+  --ok: #1f6b3a;
+  --fuente: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  color-scheme: light;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--fondo);
+  color: var(--tinta);
+  font: 400 1rem/1.5 var(--fuente);
+}
+
+.pagina { max-width: 1120px; margin: 0 auto; padding: 32px 20px 72px; }
+
+header h1 { margin: 0 0 4px; font-size: 1.75rem; font-weight: 600; letter-spacing: -0.01em; }
+header p { margin: 0; color: var(--apagado); }
+
+section {
+  margin-top: 28px;
+  padding: 24px;
+  background: var(--superficie);
+  border: 1px solid var(--linea);
+  border-radius: 6px;
+}
+section h2 { margin: 0 0 16px; font-size: 1.15rem; font-weight: 600; }
+section h3 { margin: 24px 0 0; font-size: 1rem; font-weight: 600; }
+
+/* Formularios */
+.campos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 14px 16px;
+}
+.campos .ancho { grid-column: 1 / -1; }
+
+label { display: flex; flex-direction: column; gap: 4px; font-size: 0.875rem; font-weight: 500; }
+.ayuda { font-weight: 400; color: var(--apagado); }
+
+input, select, textarea {
+  font: inherit;
+  padding: 8px 10px;
+  border: 1px solid #a9b3be;
+  border-radius: 4px;
+  background: #fff;
+  color: var(--tinta);
+  width: 100%;
+}
+textarea { resize: vertical; min-height: 64px; }
+input:focus-visible, select:focus-visible, textarea:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--acento);
+  outline-offset: 2px;
+}
+
+.barra { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+
+/* Botones */
+.btn {
+  font: inherit;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  background: transparent;
+  color: var(--tinta);
+}
+.btn:disabled { opacity: 0.5; cursor: not-allowed; }
+.btn--primario { background: var(--acento); color: #fff; }
+.btn--primario:hover:not(:disabled) { background: var(--acento-hover); }
+.btn--secondary { background: #718096; border-color: #718096; color: #fff; }
+.btn--secondary:hover:not(:disabled) { background: #4A5568; border-color: #4A5568; }
+.btn--danger { background: var(--peligro); border-color: var(--peligro); color: #fff; }
+.btn--danger:hover:not(:disabled) { background: #9B2C2C; border-color: #9B2C2C; }
+.btn--ghost { padding: 4px 8px; color: var(--peligro); }
+.btn--ghost:hover { text-decoration: underline; }
+
+/* Renglones */
+.entrada-renglon {
+  display: grid;
+  grid-template-columns: minmax(220px, 3fr) minmax(140px, 1.4fr) minmax(90px, 1fr) auto;
+  gap: 12px;
+  align-items: end;
+  margin: 0 0 12px;
+}
+.entrada-renglon[hidden] { display: none; }
+
+/* Tablas */
+.tabla-scroll { overflow-x: auto; }
+table {
+  width: 100%;
+  border: 1px solid var(--linea);
+  border-collapse: collapse;
+  background: var(--superficie);
+  font-size: 0.9375rem;
+}
+th {
+  text-align: left;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: #FFFFFF;
+  background: #2C5282;
+  padding: 8px 12px;
+  border-bottom: 2px solid var(--linea);
+  white-space: nowrap;
+}
+td { padding: 10px 12px; border-bottom: 1px solid var(--linea); vertical-align: middle; }
+tbody tr:hover { background: #f7f9fb; }
+th.num, td.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+td.vacio { text-align: center; color: var(--apagado); padding: 28px 12px; }
+td.vacio:hover { background: none; }
+td.acciones { white-space: nowrap; text-align: right; }
+td.acciones .btn + .btn { margin-left: 6px; }
+td.observaciones { max-width: 220px; color: var(--apagado); font-size: 0.875rem; }
+
+/* Un comprobante anulado deja visible que sus importes ya no valen */
+tr.es-anulada td { color: var(--apagado); }
+tr.es-anulada td.importe { text-decoration: line-through; }
+
+.insignia {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 999px;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  background: #e3eaf0;
+  color: var(--tinta);
+}
+.insignia--activa { background: #e1ecf7; color: #1b4f8a; }
+.insignia--informada { background: #dcefe3; color: var(--ok); }
+.insignia--anulada { background: #f6dcda; color: var(--peligro); }
+td.estado .insignia + .insignia { margin-left: 6px; }
+.sin-numero { color: var(--apagado); font-style: italic; }
+
+/* Campo de solo lectura + botón (selección de cliente / artículo por modal) */
+.campo-modal { display: flex; gap: 6px; }
+.campo-modal input { flex: 1; min-width: 0; background: #f7f9fb; cursor: default; }
+.campo-modal .btn { padding: 8px 12px; white-space: nowrap; }
+
+/* Paginación */
+.paginacion {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+  gap: 12px; margin-top: 16px;
+}
+.paginacion .controles { display: flex; align-items: center; gap: 10px; }
+.paginacion label { flex-direction: row; align-items: center; gap: 8px; font-weight: 400; }
+.paginacion select { width: auto; }
+
+/* ---------------------------------------------------------------------------
+   Explorer (components/Explorer.ts): modal <dialog> con buscador, filtros,
+   estados (inicial / buscando / vacío / error) y paginación
+   --------------------------------------------------------------------------- */
+dialog.explorer {
+  width: min(860px, calc(100vw - 32px));
+  padding: 0;
+  border: 1px solid var(--linea);
+  border-radius: 8px;
+  background: var(--superficie);
+  color: var(--tinta);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+}
+dialog.explorer::backdrop { background: rgba(28, 39, 51, 0.5); }
+.explorer__cuerpo { padding: 20px 24px 24px; }
+.explorer__cuerpo h2 { margin: 0 0 14px; font-size: 1.15rem; font-weight: 600; }
+
+.explorer__busqueda { display: flex; gap: 8px; }
+.explorer__busqueda input { flex: 1; min-width: 0; }
+.explorer__busqueda .btn { white-space: nowrap; }
+
+.explorer__filtros {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 12px 16px;
+  align-items: end;
+  margin-top: 12px;
+  padding: 14px;
+  border: 1px solid var(--linea);
+  border-radius: 6px;
+  background: #f7f9fb;
+}
+.explorer__filtros[hidden] { display: none; }
+.explorer__filtros .btn--ghost { justify-self: start; color: var(--acento); }
+.explorer__filtros :disabled { background: #edf1f5; cursor: not-allowed; }
+
+/* Mensaje de estado: siempre visible, cambia de aspecto según la situación */
+.explorer__estado { margin: 14px 0 0; min-height: 1.5em; color: var(--apagado); font-size: 0.875rem; }
+.explorer__estado--inicial,
+.explorer__estado--vacio,
+.explorer__estado--error {
+  padding: 36px 16px;
+  border: 1px dashed var(--linea);
+  border-radius: 6px;
+  text-align: center;
+  font-size: 0.9375rem;
+}
+.explorer__estado--error { color: var(--peligro); border-color: #e9b9b5; background: #fdf3f2; }
+.explorer__estado--cargando::before {
+  content: "";
+  display: inline-block;
+  width: 0.9em;
+  height: 0.9em;
+  margin-right: 8px;
+  vertical-align: -0.1em;
+  border: 2px solid var(--linea);
+  border-top-color: var(--acento);
+  border-radius: 50%;
+  animation: explorer-girar 0.7s linear infinite;
+}
+@keyframes explorer-girar { to { transform: rotate(360deg); } }
+
+.explorer__tabla {
+  margin-top: 10px; max-height: 340px; overflow: auto;
+  border: 1px solid var(--linea); border-radius: 4px;
+}
+.explorer__tabla[hidden] { display: none; }
+.explorer__tabla[aria-busy="true"] { opacity: 0.55; }
+.explorer__tabla table { border: 0; }
+.explorer__tabla thead th { position: sticky; top: 0; }
+.explorer__tabla tbody tr { cursor: pointer; }
+.explorer__tabla tbody tr:focus-visible { outline: 2px solid var(--acento); outline-offset: -2px; }
+.explorer__tabla tbody tr.es-seleccionada td { background: #d9ecef; }
+
+.explorer__pie {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+  gap: 12px; margin-top: 16px;
+}
+.explorer__paginacion, .explorer__acciones { display: flex; align-items: center; gap: 10px; }
+.explorer__acciones { margin-left: auto; }
+.explorer__pagina { color: var(--apagado); font-size: 0.875rem; }
+
+/* ---------------------------------------------------------------------------
+   Selector de lista de precios (components/PriceListSelector.ts)
+   --------------------------------------------------------------------------- */
+.lista-precios { margin: 0; padding: 12px 14px; border: 1px solid var(--linea); border-radius: 6px; }
+.lista-precios legend { padding: 0 6px; font-size: 0.875rem; font-weight: 600; }
+.lista-precios__opciones { display: inline-flex; border: 1px solid #a9b3be; border-radius: 4px; overflow: hidden; }
+.lista-precios__opcion {
+  flex-direction: row; align-items: center; gap: 0;
+  position: relative; cursor: pointer; font-weight: 500;
+}
+.lista-precios__opcion + .lista-precios__opcion { border-left: 1px solid #a9b3be; }
+.lista-precios__opcion input { position: absolute; opacity: 0; width: 0; height: 0; padding: 0; }
+.lista-precios__opcion span { padding: 8px 18px; }
+.lista-precios__opcion input:checked + span { background: var(--acento); color: #fff; }
+.lista-precios__opcion input:focus-visible + span { outline: 2px solid var(--acento); outline-offset: -4px; }
+.lista-precios__opcion input:disabled + span { opacity: 0.6; cursor: not-allowed; }
+.lista-precios__aviso { margin: 8px 0 0; color: var(--apagado); font-size: 0.875rem; }
+.lista-precios__aviso--error { color: var(--peligro); }
+
+.encabezado-lista { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+.encabezado-lista p { margin: 0; color: var(--apagado); }
+
+/* Aviso */
+.toast {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  max-width: min(420px, calc(100vw - 40px));
+  padding: 12px 16px;
+  border-radius: 6px;
+  color: #fff;
+  background: var(--ok);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s;
+}
+.toast.is-visible { opacity: 1; }
+.toast--error { background: var(--peligro); }
+
+@media (prefers-reduced-motion: reduce) {
+  .toast { transition: none; }
+  .explorer__estado--cargando::before { animation: none; }
+}
+@media (max-width: 560px) {
+  section { padding: 16px; }
+  .entrada-renglon { grid-template-columns: 1fr 1fr; }
+  .entrada-renglon .btn { grid-column: 1 / -1; }
+  .explorer__cuerpo { padding: 16px; }
+}
+
+/* ---------------------------------------------------------------------------
+   Página principal
+   --------------------------------------------------------------------------- */
+.cabecera { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; }
+.btn--grande { padding: 12px 22px; font-size: 1.0625rem; font-weight: 600; }
+
+.metricas { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; }
+.metrica { padding: 16px; border: 1px solid var(--linea); border-radius: 6px; background: #f7f9fb; text-align: center; }
+.metrica__titulo { margin: 0; color: var(--apagado); font-size: 0.875rem; }
+.metrica__valor { margin: 8px 0 0; font-size: 1.5rem; font-weight: 600; color: var(--acento); }
+.metrica__valor--ok { color: var(--ok); }
+
+.tabla-scroll--separada { margin-top: 20px; }
+td.letra { font-weight: 600; }
+tbody[aria-busy="true"] { opacity: 0.55; }
+
+/* Texto solo para lectores de pantalla */
+.solo-lector { position: absolute; left: -9999px; }
+
+/* ---------------------------------------------------------------------------
+   Formulario de factura (components/InvoiceForm.ts): modal <dialog>
+   --------------------------------------------------------------------------- */
+dialog.factura-modal {
+  width: min(1040px, calc(100vw - 32px));
+  max-height: calc(100vh - 32px);
+  padding: 0;
+  border: 1px solid var(--linea);
+  border-radius: 8px;
+  background: var(--superficie);
+  color: var(--tinta);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+}
+dialog.factura-modal::backdrop { background: rgba(28, 39, 51, 0.5); }
+
+/* Encabezado y pie fijos; solo se desplaza el contenido */
+.factura { display: flex; flex-direction: column; max-height: calc(100vh - 34px); }
+.factura__encabezado {
+  display: flex; align-items: center; gap: 12px;
+  padding: 18px 24px; border-bottom: 1px solid var(--linea);
+}
+.factura__encabezado h2 { margin: 0; font-size: 1.25rem; font-weight: 600; }
+.factura__contenido { overflow-y: auto; padding: 4px 24px 20px; }
+.factura__campos { margin: 0; padding: 0; border: 0; min-width: 0; }
+.factura__campos section { margin: 0; padding: 0; border: 0; background: none; }
+.factura__campos h3 { margin: 20px 0 10px; font-size: 1rem; font-weight: 600; }
+.factura__campos .ancho-2 { grid-column: span 2; }
+.factura__campos [data-ref="listaPrecios"] { margin-top: 20px; }
+.factura__campos [data-ref="observaciones"] { margin-top: 4px; }
+.factura__campos section:last-child { margin-top: 20px; }
+.factura__ayuda { margin: 8px 0 0; color: var(--apagado); font-size: 0.875rem; }
+
+/* Campos que el usuario no carga (número, tipo): se ven distintos a los editables */
+.factura input[readonly] { background: #f1f4f7; color: var(--apagado); cursor: default; }
+.factura .campo-modal input[readonly] { color: var(--tinta); }
+/* Solo lectura: los controles bloqueados siguen siendo legibles */
+.factura__campos:disabled input,
+.factura__campos:disabled select,
+.factura__campos:disabled textarea { background: #f1f4f7; color: var(--tinta); opacity: 1; }
+.factura__campos:disabled .btn { display: none; }
+
+.factura__aviso, .factura__bloqueo {
+  margin: 14px 24px 0; padding: 10px 14px; border-radius: 6px; font-size: 0.9375rem;
+}
+.factura__aviso { color: var(--peligro); background: #fdf3f2; border: 1px solid #e9b9b5; }
+.factura__bloqueo { color: #1b4f8a; background: #e9f2fb; border: 1px solid #bcd6f0; }
+.factura__aviso[hidden], .factura__bloqueo[hidden] { display: none; }
+
+.factura__totales {
+  display: grid; justify-content: end; gap: 4px;
+  margin: 14px 0 0; padding: 14px 16px;
+  border: 1px solid var(--linea); border-radius: 6px; background: #f7f9fb;
+}
+.factura__totales div { display: flex; justify-content: space-between; gap: 40px; }
+.factura__totales dt { color: var(--apagado); }
+.factura__totales dd { margin: 0; font-variant-numeric: tabular-nums; }
+.factura__total { margin-top: 6px; padding-top: 8px; border-top: 1px solid var(--linea); font-size: 1.15rem; font-weight: 600; }
+.factura__total dt { color: var(--tinta); }
+.factura__total dd { color: var(--acento); }
+
+.factura__pie {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 10px;
+  padding: 14px 24px; border-top: 1px solid var(--linea); background: #f7f9fb;
+}
+.factura__separador { flex: 1; }
+.factura__pie .btn[hidden] { display: none; }
+
+@media (max-width: 700px) {
+  .entrada-renglon { grid-template-columns: 1fr 1fr; }
+  .entrada-renglon label:first-child, .entrada-renglon .btn { grid-column: 1 / -1; }
+  .factura__campos .ancho-2 { grid-column: 1 / -1; }
+  .factura__contenido { padding: 4px 16px 16px; }
+  .factura__encabezado, .factura__pie { padding-left: 16px; padding-right: 16px; }
+  .factura__aviso, .factura__bloqueo { margin-left: 16px; margin-right: 16px; }
+}

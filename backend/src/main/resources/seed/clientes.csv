@@ -1,0 +1,101 @@
+nombre;cuit;condicion;domicilio;localidad;provincia
+Consumidor Final;;CONSUMIDOR_FINAL;;;
+YPF S.A.;30-54668997-9;RESPONSABLE_INSCRIPTO;Macacha Güemes 515;Buenos Aires;Ciudad Autónoma de Buenos Aires
+Banco de la Nación Argentina;30-50001091-2;RESPONSABLE_INSCRIPTO;Bartolomé Mitre 326;Buenos Aires;Ciudad Autónoma de Buenos Aires
+Mercado Libre S.R.L.;30-70308853-4;RESPONSABLE_INSCRIPTO;Av. Caseros 3039;Buenos Aires;Ciudad Autónoma de Buenos Aires
+Telecom Argentina S.A.;30-63945373-8;RESPONSABLE_INSCRIPTO;General Hornos 690;Buenos Aires;Ciudad Autónoma de Buenos Aires
+Arcor S.A.I.C.;30-50279317-5;RESPONSABLE_INSCRIPTO;Av. Fulvio Pagani 487;Arroyito;Córdoba
+Banco de Galicia y Buenos Aires S.A.U.;30-50000173-5;RESPONSABLE_INSCRIPTO;Tte. Gral. Juan D. Perón 430;Buenos Aires;Ciudad Autónoma de Buenos Aires
+Aerolíneas Argentinas S.A.;30-64140555-4;RESPONSABLE_INSCRIPTO;Av. Rafael Obligado s/n;Buenos Aires;Ciudad Autónoma de Buenos Aires
+Correo Oficial de la República Argentina S.A.;30-70857483-6;RESPONSABLE_INSCRIPTO;Brandsen 2070;Buenos Aires;Ciudad Autónoma de Buenos Aires
+Administración Federal de Ingresos Públicos (ARCA);33-69345023-9;EXENTO;Hipólito Yrigoyen 370;Buenos Aires;Ciudad Autónoma de Buenos Aires
+Ferretería Los Andes S.R.L. (CUIT sin verificar);30-71234567-1;RESPONSABLE_INSCRIPTO;San Martín 1450;Mendoza;Mendoza
+Servicios Patagonia S.A. (CUIT sin verificar);30-70123456-8;MONOTRIBUTO;Av. Roca 820;Neuquén;Neuquén
+Comercial del Sur S.A. (CUIT inválido);30-71234567-8;RESPONSABLE_INSCRIPTO;Belgrano 230;Bahía Blanca;Buenos Aires
+Distribuidora Pampa S.R.L. (CUIT inválido);30-12345678-0;MONOTRIBUTO;Av. San Martín 77;Santa Rosa;La Pampa
+Molina, Jorge;20-27196153-8;MONOTRIBUTO;Las Heras 4740;Posadas;Misiones
+Aguirre, Martín;20-37885015-1;CONSUMIDOR_FINAL;Rivadavia 4699;Mar del Plata;Buenos Aires
+Sociedad de Bomberos Voluntarios de Rosario;30-63747247-6;EXENTO;España 2905;Neuquén;Neuquén
+Molina, Javier;;CONSUMIDOR_FINAL;Urquiza 2502;Godoy Cruz;Mendoza
+González, Gustavo;20-21443670-2;MONOTRIBUTO;España 3904;San Carlos de Bariloche;Río Negro
+Rojas, Sofía;27-18629189-7;MONOTRIBUTO;Lavalle 357;Paraná;Entre Ríos
+Distribuidora Güemes S.R.L.;30-57892854-1;RESPONSABLE_INSCRIPTO;San Martín 519;Salta;Salta
+Romero, Pablo;20-22568110-5;CONSUMIDOR_FINAL;Alem 2653;Bahía Blanca;Buenos Aires
+González, Pablo Miguel;20-43834791-8;MONOTRIBUTO;Italia 4595;Santa Rosa;La Pampa
+Autopartes La Estrella S.R.L.;30-70609275-3;RESPONSABLE_INSCRIPTO;25 de Mayo 2015;Posadas;Misiones
+Supermercado El Progreso S.R.L.;30-63328404-7;RESPONSABLE_INSCRIPTO;25 de Mayo 144;Córdoba;Córdoba
+Sánchez, María Natalia;27-18245456-2;MONOTRIBUTO;Italia 1313;Rosario;Santa Fe
+Distribuidora Aconcagua S.A.;30-60568788-8;RESPONSABLE_INSCRIPTO;Italia 4772;Córdoba;Córdoba
+Benítez, Hernán Martín;;CONSUMIDOR_FINAL;Sarmiento 1125;Villa María;Córdoba
+Constructora Del Litoral S.A.S.;33-67884878-1;RESPONSABLE_INSCRIPTO;Av. del Libertador 2284;Río Cuarto;Córdoba
+Sociedad de Bomberos Voluntarios de Neuquén;30-61038518-0;EXENTO;Sarmiento 3583;Posadas;Misiones
+Transportes El Trébol S.A.;30-50172171-5;RESPONSABLE_INSCRIPTO;Urquiza 2976;Resistencia;Chaco
+Distribuidora Los Andes S.A.;30-58316050-3;RESPONSABLE_INSCRIPTO;Italia 730;Neuquén;Neuquén
+López, Daniela;;CONSUMIDOR_FINAL;Av. Colón 2267;Paraná;Entre Ríos
+Maderera Güemes S.A.S.;30-63054261-4;RESPONSABLE_INSCRIPTO;Alem 4156;Córdoba;Córdoba
+Constructora El Progreso S.R.L.;30-52027563-7;RESPONSABLE_INSCRIPTO;Lavalle 1453;Córdoba;Córdoba
+Autopartes Santa Rosa S.A.S.;30-59877557-1;RESPONSABLE_INSCRIPTO;Av. del Libertador 3597;San Juan;San Juan
+Frigorífico Del Centro S.A.;33-60322258-5;RESPONSABLE_INSCRIPTO;España 1049;San Juan;San Juan
+Benítez, Luis;20-21361986-2;CONSUMIDOR_FINAL;Mitre 1326;Mendoza;Mendoza
+González, Javier Hernán;20-32462733-3;CONSUMIDOR_FINAL;Lavalle 414;La Plata;Buenos Aires
+Autopartes Norte Grande S.R.L.;30-50830113-4;RESPONSABLE_INSCRIPTO;25 de Mayo 1204;Mar del Plata;Buenos Aires
+Corralón Los Álamos S.A.S.;30-65870693-0;RESPONSABLE_INSCRIPTO;Av. Roca 1154;Posadas;Misiones
+Martínez, Matías;;CONSUMIDOR_FINAL;25 de Mayo 2023;Mendoza;Mendoza
+García, Sergio Facundo;;CONSUMIDOR_FINAL;Av. del Libertador 2540;Paraná;Entre Ríos
+Benítez, Natalia;27-35072740-5;MONOTRIBUTO;Las Heras 1589;San Juan;San Juan
+Frigorífico La Unión S.A.S.;33-67211726-2;RESPONSABLE_INSCRIPTO;Av. del Libertador 4347;San Juan;San Juan
+Castro, Fernando;;CONSUMIDOR_FINAL;Rivadavia 3864;Resistencia;Chaco
+Martínez, Laura;27-25986425-4;MONOTRIBUTO;Las Heras 2469;Río Cuarto;Córdoba
+García, Carolina;27-34898562-6;CONSUMIDOR_FINAL;San Martín 1763;Bahía Blanca;Buenos Aires
+López, Fernando Juan;20-22029776-5;MONOTRIBUTO;Lavalle 3196;Buenos Aires;Ciudad Autónoma de Buenos Aires
+Rojas, Valeria Sofía;27-35728024-4;MONOTRIBUTO;Av. del Libertador 2200;San Rafael;Mendoza
+Textil El Ceibo S.A.S.;30-64549455-1;RESPONSABLE_INSCRIPTO;9 de Julio 1310;San Luis;San Luis
+Benítez, Diego Miguel;;CONSUMIDOR_FINAL;Sarmiento 3796;Buenos Aires;Ciudad Autónoma de Buenos Aires
+Benítez, Valeria Natalia;;CONSUMIDOR_FINAL;Urquiza 4375;Río Cuarto;Córdoba
+Molina, Fernando;;CONSUMIDOR_FINAL;Güemes 2713;Paraná;Entre Ríos
+Sosa, Miguel;20-42897514-7;MONOTRIBUTO;Italia 2309;Santa Fe;Santa Fe
+Rojas, Lucas;;CONSUMIDOR_FINAL;Alem 3261;Bahía Blanca;Buenos Aires
+Fundación Río Paraná;30-57861565-9;EXENTO;Sarmiento 4515;La Plata;Buenos Aires
+Maderera El Trébol S.A.S.;30-69933260-3;RESPONSABLE_INSCRIPTO;Belgrano 3361;San Carlos de Bariloche;Río Negro
+Bodega Los Andes S.R.L.;30-52109871-2;RESPONSABLE_INSCRIPTO;9 de Julio 2186;Bahía Blanca;Buenos Aires
+Frigorífico Aconcagua S.R.L.;33-64917726-6;RESPONSABLE_INSCRIPTO;Moreno 4304;Río Cuarto;Córdoba
+Álvarez, Natalia;27-38398321-0;MONOTRIBUTO;Las Heras 2757;Mendoza;Mendoza
+Álvarez, Laura;;CONSUMIDOR_FINAL;Av. Roca 4523;San Carlos de Bariloche;Río Negro
+Gutiérrez, Javier Ricardo;20-39276293-1;MONOTRIBUTO;Av. Roca 2606;San Rafael;Mendoza
+Giménez, Laura;;CONSUMIDOR_FINAL;Güemes 4410;San Carlos de Bariloche;Río Negro
+Fernández, Sofía;27-36935596-7;MONOTRIBUTO;Güemes 2073;Resistencia;Chaco
+Transportes La Unión S.A.S.;30-50164612-8;RESPONSABLE_INSCRIPTO;Mitre 1805;La Plata;Buenos Aires
+Herrera, Florencia Patricia;27-25366447-4;CONSUMIDOR_FINAL;Lavalle 3948;San Luis;San Luis
+Benítez, Verónica;27-35240175-2;MONOTRIBUTO;Güemes 2222;Godoy Cruz;Mendoza
+Frigorífico Los Andes S.R.L.;33-66696766-1;RESPONSABLE_INSCRIPTO;9 de Julio 2868;Mar del Plata;Buenos Aires
+Asociación Mutual Las Heras;30-50352838-6;EXENTO;Belgrano 3324;Bahía Blanca;Buenos Aires
+Estudio Contable La Estrella S.A.;30-59287399-7;RESPONSABLE_INSCRIPTO;Mitre 4200;San Carlos de Bariloche;Río Negro
+Metalúrgica Del Sur S.A.;33-62077443-5;RESPONSABLE_INSCRIPTO;25 de Mayo 4333;Villa María;Córdoba
+Lácteos Don Pedro S.R.L.;33-51145974-0;RESPONSABLE_INSCRIPTO;España 619;San Luis;San Luis
+Imprenta Río Paraná S.R.L.;30-71761667-3;RESPONSABLE_INSCRIPTO;Lavalle 3975;Río Cuarto;Córdoba
+Estudio Contable Del Litoral S.R.L.;30-68649545-7;RESPONSABLE_INSCRIPTO;Italia 1823;Resistencia;Chaco
+Ramírez, Valeria Florencia;;CONSUMIDOR_FINAL;San Martín 3987;Villa María;Córdoba
+Metalúrgica Del Centro S.R.L.;30-65079187-4;RESPONSABLE_INSCRIPTO;Av. Colón 3419;Córdoba;Córdoba
+Supermercado El Ceibo S.A.S.;30-50912169-5;RESPONSABLE_INSCRIPTO;Lavalle 4515;Bahía Blanca;Buenos Aires
+Distribuidora La Unión S.R.L.;30-54072596-5;RESPONSABLE_INSCRIPTO;Las Heras 3737;Bahía Blanca;Buenos Aires
+Librería Del Centro S.A.S.;30-67342697-9;RESPONSABLE_INSCRIPTO;San Martín 1107;Santa Rosa;La Pampa
+González, Hernán;20-43769238-7;MONOTRIBUTO;Moreno 4466;Río Cuarto;Córdoba
+Herrera, Gabriela;27-41250504-8;MONOTRIBUTO;Av. Roca 3512;Mendoza;Mendoza
+Librería Río Paraná S.A.S.;33-64570323-0;RESPONSABLE_INSCRIPTO;25 de Mayo 4238;San Juan;San Juan
+Librería Santa Rosa S.A.;33-71503449-8;RESPONSABLE_INSCRIPTO;Italia 444;Godoy Cruz;Mendoza
+Asociación Civil Norte Grande;30-63403328-5;EXENTO;Las Heras 4755;La Plata;Buenos Aires
+Librería Belgrano S.A.;30-50865376-6;RESPONSABLE_INSCRIPTO;Av. del Libertador 651;Córdoba;Córdoba
+Metalúrgica Las Heras S.R.L.;30-53008657-3;RESPONSABLE_INSCRIPTO;Güemes 675;San Miguel de Tucumán;Tucumán
+Fernández, Jorge;20-34030406-4;MONOTRIBUTO;Sarmiento 4331;Godoy Cruz;Mendoza
+Bodega La Estrella S.A.;30-68647344-5;RESPONSABLE_INSCRIPTO;Las Heras 4660;Posadas;Misiones
+García, Patricia Carolina;27-24561079-9;MONOTRIBUTO;Av. Roca 3473;Resistencia;Chaco
+Autopartes Los Álamos S.A.;30-64711975-8;RESPONSABLE_INSCRIPTO;Moreno 3799;Mar del Plata;Buenos Aires
+Imprenta Del Sur S.A.S.;30-70881248-6;RESPONSABLE_INSCRIPTO;Sarmiento 450;Santa Fe;Santa Fe
+Transportes Don Pedro S.A.S.;33-69212221-1;RESPONSABLE_INSCRIPTO;Mitre 1879;Paraná;Entre Ríos
+Asociación Mutual Don Pedro;30-66548853-1;EXENTO;Italia 2767;Paraná;Entre Ríos
+Estudio Contable Las Heras S.R.L.;33-53907344-9;RESPONSABLE_INSCRIPTO;Rivadavia 3316;Salta;Salta
+Asociación Cooperadora Escuela N° 141;30-66598854-2;EXENTO;Lavalle 2809;Santa Rosa;La Pampa
+Bodega La Esperanza S.A.S.;33-55372786-9;RESPONSABLE_INSCRIPTO;Las Heras 741;Paraná;Entre Ríos
+Romero, Jorge;20-20625265-1;MONOTRIBUTO;San Martín 4491;Posadas;Misiones
+Constructora Patagonia S.R.L.;30-67449342-4;RESPONSABLE_INSCRIPTO;Lavalle 3248;Paraná;Entre Ríos
+Fernández, Daniela;27-32370728-1;MONOTRIBUTO;Sarmiento 3238;San Rafael;Mendoza

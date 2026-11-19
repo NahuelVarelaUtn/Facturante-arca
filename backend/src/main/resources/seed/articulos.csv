@@ -1,0 +1,101 @@
+codigo;descripcion;categoria;unidad;alicuota_iva;precio_minorista;precio_mayorista
+NOT-015;Notebook 15 pulgadas;Notebooks y PC;unidad;10.50;950000.00;807500.00
+NOT-101;Notebook 15,6" Core i5 13.ª gen. 16 GB RAM SSD 512 GB;Notebooks y PC;unidad;10.50;1185000.00;1007250.00
+NOT-102;Notebook 14" Ryzen 5 8 GB RAM SSD 256 GB;Notebooks y PC;unidad;10.50;842000.00;715700.00
+NOT-103;Notebook 15,6" Core i7 16 GB RAM SSD 1 TB;Notebooks y PC;unidad;10.50;1640000.00;1394000.00
+NOT-104;Notebook gamer 16" Ryzen 7 32 GB RAM RTX 4060 SSD 1 TB;Notebooks y PC;unidad;10.50;2390000.00;2031500.00
+NOT-105;Notebook 14" Celeron 4 GB RAM eMMC 128 GB;Notebooks y PC;unidad;10.50;468000.00;397800.00
+PCA-101;PC de escritorio oficina Core i3 8 GB RAM SSD 240 GB;Notebooks y PC;unidad;10.50;612000.00;520200.00
+PCA-102;PC de escritorio gamer Ryzen 5 16 GB RAM RTX 4060 SSD 1 TB;Notebooks y PC;unidad;10.50;1780000.00;1513000.00
+PCA-103;Mini PC Core i5 16 GB RAM SSD 512 GB;Notebooks y PC;unidad;10.50;798000.00;678300.00
+PCA-104;All in One 24" Core i5 8 GB RAM SSD 512 GB;Notebooks y PC;unidad;10.50;1120000.00;952000.00
+CPU-101;Procesador 6 núcleos 12 hilos 4,2 GHz socket AM4;Componentes de PC;unidad;10.50;198000.00;168300.00
+CPU-102;Procesador 8 núcleos 16 hilos 4,7 GHz socket AM5;Componentes de PC;unidad;10.50;412000.00;350200.00
+CPU-103;Procesador 10 núcleos 16 hilos 4,6 GHz socket LGA1700;Componentes de PC;unidad;10.50;289000.00;245650.00
+CPU-104;Procesador 14 núcleos 20 hilos 5,3 GHz socket LGA1700;Componentes de PC;unidad;10.50;498000.00;423300.00
+MBO-101;Motherboard micro ATX socket AM4 chipset B550;Componentes de PC;unidad;10.50;142000.00;120700.00
+MBO-102;Motherboard ATX socket AM5 chipset B650 WiFi;Componentes de PC;unidad;10.50;268000.00;227800.00
+MBO-103;Motherboard micro ATX socket LGA1700 chipset B760;Componentes de PC;unidad;10.50;189000.00;160650.00
+RAM-101;Memoria RAM DDR4 8 GB 3200 MHz;Componentes de PC;unidad;10.50;34900.00;29665.00
+RAM-102;Memoria RAM DDR4 16 GB 3200 MHz;Componentes de PC;unidad;10.50;62800.00;53380.00
+RAM-103;Memoria RAM DDR5 16 GB 5600 MHz;Componentes de PC;unidad;10.50;89500.00;76075.00
+RAM-104;Memoria RAM DDR5 32 GB (2 x 16 GB) 6000 MHz;Componentes de PC;unidad;10.50;176000.00;149600.00
+RAM-105;Memoria RAM SODIMM DDR4 8 GB 3200 MHz para notebook;Componentes de PC;unidad;10.50;36400.00;30940.00
+GPU-101;Placa de video 8 GB GDDR6 gama media;Componentes de PC;unidad;10.50;548000.00;465800.00
+GPU-102;Placa de video 12 GB GDDR6 gama alta;Componentes de PC;unidad;10.50;912000.00;775200.00
+GPU-103;Placa de video 6 GB GDDR6 gama de entrada;Componentes de PC;unidad;10.50;329000.00;279650.00
+FUE-101;Fuente de alimentación 550 W 80 Plus Bronze;Componentes de PC;unidad;10.50;78500.00;66725.00
+FUE-102;Fuente de alimentación 750 W 80 Plus Gold modular;Componentes de PC;unidad;10.50;149000.00;126650.00
+GAB-101;Gabinete mid tower vidrio templado con 3 coolers RGB;Componentes de PC;unidad;10.50;86000.00;73100.00
+GAB-102;Gabinete micro ATX oficina sin fuente;Componentes de PC;unidad;10.50;48500.00;41225.00
+COO-101;Cooler para CPU torre con ventilador 120 mm;Componentes de PC;unidad;21.00;39800.00;33830.00
+COO-102;Refrigeración líquida 240 mm ARGB;Componentes de PC;unidad;21.00;128000.00;108800.00
+COO-103;Pasta térmica jeringa 4 g;Componentes de PC;unidad;21.00;8900.00;7565.00
+SSD-101;Disco SSD 240 GB SATA 2,5";Almacenamiento;unidad;10.50;38900.00;33065.00
+SSD-102;Disco SSD 480 GB SATA 2,5";Almacenamiento;unidad;10.50;61500.00;52275.00
+SSD-103;Disco SSD NVMe M.2 500 GB 3500 MB/s;Almacenamiento;unidad;10.50;72400.00;61540.00
+SSD-104;Disco SSD NVMe M.2 1 TB 5000 MB/s;Almacenamiento;unidad;10.50;118000.00;100300.00
+SSD-105;Disco SSD NVMe M.2 2 TB 7000 MB/s;Almacenamiento;unidad;10.50;236000.00;200600.00
+HDD-101;Disco rígido 1 TB 7200 rpm SATA 3,5";Almacenamiento;unidad;10.50;79800.00;67830.00
+HDD-102;Disco rígido 4 TB 5400 rpm SATA 3,5";Almacenamiento;unidad;10.50;162000.00;137700.00
+EXT-101;Disco externo portátil 1 TB USB 3.0;Almacenamiento;unidad;21.00;98700.00;83895.00
+EXT-102;Disco externo portátil 2 TB USB 3.0;Almacenamiento;unidad;21.00;139000.00;118150.00
+PEN-101;Pendrive 64 GB USB 3.0;Almacenamiento;unidad;21.00;9800.00;8330.00
+PEN-102;Pendrive 128 GB USB 3.2;Almacenamiento;unidad;21.00;16400.00;13940.00
+MSD-101;Tarjeta de memoria microSD 128 GB clase 10 con adaptador;Almacenamiento;unidad;21.00;17900.00;15215.00
+MON-024;Monitor 24 pulgadas;Monitores;unidad;10.50;210000.00;178500.00
+MON-101;Monitor LED 22" Full HD 75 Hz HDMI y VGA;Monitores;unidad;10.50;168000.00;142800.00
+MON-102;Monitor IPS 24" Full HD 100 Hz;Monitores;unidad;10.50;224000.00;190400.00
+MON-103;Monitor IPS 27" QHD 165 Hz gamer;Monitores;unidad;10.50;468000.00;397800.00
+MON-104;Monitor curvo 34" ultrawide WQHD 144 Hz;Monitores;unidad;10.50;789000.00;670650.00
+MON-105;Monitor 27" 4K UHD IPS para diseño;Monitores;unidad;10.50;612000.00;520200.00
+MON-106;Soporte de escritorio para monitor con brazo articulado;Monitores;unidad;21.00;54800.00;46580.00
+TEC-001;Teclado mecánico;Periféricos;unidad;21.00;45000.00;38250.00
+MOU-001;Mouse inalámbrico;Periféricos;unidad;21.00;18500.50;15725.42
+TEC-101;Teclado USB español latino con teclado numérico;Periféricos;unidad;21.00;12900.00;10965.00
+TEC-102;Teclado mecánico switch rojo retroiluminado RGB 60 %;Periféricos;unidad;21.00;64800.00;55080.00
+TEC-103;Combo teclado y mouse inalámbricos 2,4 GHz;Periféricos;unidad;21.00;32400.00;27540.00
+MOU-101;Mouse óptico USB 1000 dpi;Periféricos;unidad;21.00;6900.00;5865.00
+MOU-102;Mouse gamer 12000 dpi 6 botones RGB;Periféricos;unidad;21.00;34700.00;29495.00
+MOU-103;Mouse vertical ergonómico inalámbrico;Periféricos;unidad;21.00;28600.00;24310.00
+PAD-101;Mouse pad gamer XL 80 x 30 cm;Periféricos;unidad;21.00;14800.00;12580.00
+WEB-101;Cámara web Full HD 1080p con micrófono;Periféricos;unidad;21.00;46300.00;39355.00
+JOY-101;Joystick inalámbrico para PC;Periféricos;unidad;21.00;58900.00;50065.00
+UPS-101;UPS 800 VA con estabilizador de tensión;Periféricos;unidad;21.00;124000.00;105400.00
+EST-101;Estabilizador de tensión 1000 VA 4 tomas;Periféricos;unidad;21.00;38500.00;32725.00
+AUR-101;Auriculares con micrófono para PC conexión USB;Audio y video;unidad;21.00;27800.00;23630.00
+AUR-102;Auriculares gamer 7.1 con micrófono desmontable;Audio y video;unidad;21.00;68400.00;58140.00
+AUR-103;Auriculares Bluetooth in-ear con estuche de carga;Audio y video;unidad;21.00;39800.00;33830.00
+PAR-101;Parlantes 2.0 para PC alimentación USB;Audio y video;unidad;21.00;19600.00;16660.00
+PAR-102;Parlante portátil Bluetooth 20 W resistente al agua;Audio y video;unidad;21.00;54200.00;46070.00
+MIC-101;Micrófono condensador USB con brazo y filtro antipop;Audio y video;unidad;21.00;76500.00;65025.00
+PRO-101;Proyector LED Full HD 4000 lúmenes HDMI;Audio y video;unidad;21.00;498000.00;423300.00
+CAB-002;Cable HDMI 2 m;Conectividad y redes;unidad;21.00;6200.00;5270.00
+ROU-101;Router WiFi 5 doble banda AC1200;Conectividad y redes;unidad;21.00;58300.00;49555.00
+ROU-102;Router WiFi 6 doble banda AX3000;Conectividad y redes;unidad;21.00;128000.00;108800.00
+ROU-103;Sistema WiFi mesh x 2 nodos AX1800;Conectividad y redes;unidad;21.00;219000.00;186150.00
+SWI-101;Switch 8 puertos Gigabit no administrable;Conectividad y redes;unidad;21.00;36900.00;31365.00
+SWI-102;Switch 24 puertos Gigabit rackeable;Conectividad y redes;unidad;21.00;168000.00;142800.00
+WIF-101;Adaptador WiFi USB doble banda AC600;Conectividad y redes;unidad;21.00;17400.00;14790.00
+WIF-102;Placa de red PCI Express WiFi 6 con Bluetooth 5.2;Conectividad y redes;unidad;21.00;42800.00;36380.00
+UTP-101;Cable de red UTP Cat 6 por metro;Conectividad y redes;metro;21.00;780.00;663.00
+UTP-102;Bobina de cable UTP Cat 5e exterior 305 m;Conectividad y redes;unidad;21.00;148000.00;125800.00
+UTP-103;Patch cord UTP Cat 6 2 m;Conectividad y redes;unidad;21.00;3900.00;3315.00
+RJ4-101;Conectores RJ45 Cat 6 bolsa x 100;Conectividad y redes;paquete;21.00;14500.00;12325.00
+CAB-101;Cable HDMI 2.1 8K 3 m;Conectividad y redes;unidad;21.00;16800.00;14280.00
+CAB-102;Cable DisplayPort 1.4 2 m;Conectividad y redes;unidad;21.00;13900.00;11815.00
+CAB-103;Cable USB-C a USB-C 100 W 1 m;Conectividad y redes;unidad;21.00;9600.00;8160.00
+HUB-101;Hub USB-C 7 en 1 con HDMI, lector SD y carga PD;Conectividad y redes;unidad;21.00;47800.00;40630.00
+IMP-101;Impresora multifunción tinta continua color WiFi;Impresión;unidad;10.50;386000.00;328100.00
+IMP-102;Impresora láser monocromática WiFi dúplex;Impresión;unidad;10.50;298000.00;253300.00
+IMP-103;Impresora térmica de comprobantes 80 mm USB;Impresión;unidad;10.50;142000.00;120700.00
+TON-101;Cartucho de tóner negro compatible 2000 páginas;Impresión;unidad;21.00;28600.00;24310.00
+TIN-101;Botella de tinta negra 70 ml para sistema continuo;Impresión;unidad;21.00;11400.00;9690.00
+CEL-101;Celular 6,6" 128 GB 6 GB RAM doble SIM;Dispositivos móviles;unidad;21.00;398000.00;338300.00
+CEL-102;Celular 6,7" 256 GB 8 GB RAM 5G;Dispositivos móviles;unidad;21.00;742000.00;630700.00
+TAB-101;Tablet 10,1" 64 GB 4 GB RAM WiFi;Dispositivos móviles;unidad;21.00;289000.00;245650.00
+TAB-102;Tablet 11" 128 GB 8 GB RAM con lápiz;Dispositivos móviles;unidad;21.00;568000.00;482800.00
+REL-101;Reloj inteligente con GPS y monitor cardíaco;Dispositivos móviles;unidad;21.00;124000.00;105400.00
+CAR-101;Cargador de pared USB-C 25 W carga rápida;Dispositivos móviles;unidad;21.00;14700.00;12495.00
+CAR-102;Cargador GaN 65 W 3 puertos;Dispositivos móviles;unidad;21.00;46900.00;39865.00
+POW-101;Batería portátil 20000 mAh con carga rápida;Dispositivos móviles;unidad;21.00;52800.00;44880.00
